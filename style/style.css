@@ -1,0 +1,72 @@
+:root {
+  --bg-dark: #030303; 
+  --dark-red: #710707;
+  --font-gold: #9d8665; 
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 150px;
+  background-color: var(--bg-dark);
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__title {
+  display: flex;
+  align-items: center
+}
+
+.header__text {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Forum", "Inter", sans-serif;
+  font-size: 28px;
+  letter-spacing: 5px;
+}
+
+.nav__list {
+  display: flex;
+  color: #fff;
+  font-weight: thin;
+  font-size: 22px;
+  list-style-type: none;
+  font-family: "Roboto";
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+.nav__item:hover {
+  cursor: pointer;
+  color: var(--font-gold)
+}
+
+.nav__item:active {
+  cursor: pointer;
+  color: #7E6C51;
+}
+.nav__item:not(:last-child) {
+  margin-right: 55px;
+}
