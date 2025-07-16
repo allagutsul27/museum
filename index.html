@@ -1,40 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
-  <link rel="stylesheet" href="./style/style.css">
-  <title>Museum</title>
-</head>
-<body>
-  <header class="header">
-    <div class="wrapper">
-
-      <div class="header__content">
-
-        <div class="header__title">
-          <div class="header__logo">
-            <img src="./images/logo.svg" alt="museum-logo">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Museum</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__content">
+          <div class="header__text">
+            <div class="header__logo">
+              <img src="./images/logo.svg" alt="museum-logo" />
+            </div>
+            <h1 class="header__title">Louvre</h1>
           </div>
-          <div class="header__text">Louvre</div>
+
+          <nav class="header__nav">
+            <ul class="nav__list">
+              <li class="nav__item">Visiting</li>
+              <li class="nav__item">Explore</li>
+              <li class="nav__item">Video</li>
+              <li class="nav__item">Gallery</li>
+              <li class="nav__item">Tickets</li>
+              <li class="nav__item">Contacts</li>
+            </ul>
+          </nav>
         </div>
-        
-        <nav class="header__nav">
-          <ul class="nav__list">
-            <li class="nav__item">Visiting</li>
-            <li class="nav__item">Explore</li>
-            <li class="nav__item">Video</li>
-            <li class="nav__item">Gallery</li>
-            <li class="nav__item">Tickets</li>
-            <li class="nav__item">Contacts</li>
-          </ul>
-        </nav>
       </div>
-    </div>
-  </header>
-</body>
+    </header>
+
+    <main class="main">
+      <section id="welcome" class="welcome">
+        <div class="wrapper">
+          <div class="welcome__content">
+            <div class="welcome__info">
+              <h2 class="welcome__title">
+                Welcome <br />
+                to the Louvre
+              </h2>
+              <p class="welcome__text">From the castle to the museum</p>
+              <button class="welcome__btn">Discover the Louvre</button>
+            </div>
+
+            <div class="welcome__image">
+              <img src="./images/welcome/welcome-img.jpg" alt="welcome-img" />
+            </div>
+
+            <div class="pagination">
+              <div class="pagination__num">
+                <span class="pagination__num-left">01</span>
+                <span class="pagination__line">|</span>
+                <span class="pagination__num-right">05</span>
+              </div>
+              <div class="pagination__carousel">
+                <div class="carousel__item--active"></div>
+                <div class="carousel__item"></div>
+                <div class="carousel__item"></div>
+                <div class="carousel__item"></div>
+                <div class="carousel__item"></div>
+              </div>
+              <div class="pagination__arrows">
+                
+                <div class="pagination__arrow-left">
+                  <svg
+                    width="30" height="8" viewBox="0 0 30 8"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="white"
+                  >
+                    <path
+                      d="M30 4H4M8 0L2 4l6 4"
+                      stroke="white"
+                      stroke-width="2"
+                      fill="none"
+                    />
+                  </svg>
+                </div>
+
+                <div class="pagination__arrow-right">
+                  <svg
+                    width="30"
+                    height="8"
+                    viewBox="0 0 30 8"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="white"
+                  >
+                    <path
+                      d="M0 4h26M22 0l6 4-6 4"
+                      stroke="white"
+                      stroke-width="2"
+                      fill="none"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </body>
 </html>

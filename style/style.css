@@ -17,6 +17,7 @@ html {
   display: flex;
   align-items: center;
   height: 150px;
+  width: 100%;
   background-color: var(--bg-dark);
 }
 
@@ -32,12 +33,12 @@ html {
   align-items: center;
 }
 
-.header__title {
+.header__text {
   display: flex;
   align-items: center
 }
 
-.header__text {
+.header__title {
   display: flex;
   align-items: center;
   text-transform: uppercase;
@@ -67,6 +68,139 @@ html {
   cursor: pointer;
   color: #7E6C51;
 }
+
 .nav__item:not(:last-child) {
   margin-right: 55px;
+}
+
+.welcome {
+  width: 100%;
+  background-color: var(--bg-dark);
+}
+
+.welcome__content {
+  display: flex;
+  position: relative;
+}
+
+.welcome__title {
+  text-transform: uppercase;
+  font-family: "Forum", "Inter", sans-serif;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 90px;
+  letter-spacing: 5px;
+  color: #fff;
+  margin: 0 0 50px;
+  padding-top: 150px;
+}
+
+.welcome__text {
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: #fff;
+  margin-bottom: 75px;
+}
+
+.welcome__btn {
+  color: #fff;
+  font-weight: 300;
+  font-family: "Roboto";
+  padding: 0 64px;
+  background-color: var(--dark-red);
+  font-size: 22px;
+  letter-spacing: 2px;
+  min-height: 75px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.welcome__btn:hover {
+  background-color: var(--font-gold);
+}
+
+.welcome__image {
+  margin-bottom: 60px;
+}
+
+.pagination {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #030303;
+  height: 120px;
+  width: 600px;
+  color: #fff;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 40px;
+  font-size: 22px;
+  /* padding: 40px 74px; */
+}
+
+.pagination__num {
+  margin-right: 55px;
+}
+
+.pagination__num-left:hover, 
+.pagination__num-right:hover  {
+  cursor: pointer;
+  color: #D2B183;
+}
+
+.pagination__line {
+  margin: 0 10px;
+}
+
+.pagination__carousel {
+  margin-right: 60px;
+  display: flex;
+  gap: 25px;
+}
+
+.carousel__item {
+  height: 16px;
+  width: 16px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+
+.carousel__item:hover, 
+.carousel__item--active:hover {
+  background-color: #9D8665;
+}
+
+.carousel__item--active {
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  background-color: #D2B183;
+}
+
+.pagination__arrows {
+  display: flex;
+  gap: 20px;
+}
+
+.pagination__arrow-left,
+.pagination__arrow-right {
+  cursor: pointer;
+}
+
+.pagination__arrow-left svg path,
+.pagination__arrow-right svg path {
+  transition: stroke 0.3s ease;
+}
+
+.pagination__arrow-left:hover svg path,
+.pagination__arrow-right:hover svg path {
+  stroke: #9D8665;
 }
