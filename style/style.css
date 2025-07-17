@@ -13,6 +13,7 @@ html {
   margin: 0 auto;
 }
 
+/* #region header */
 .header {
   display: flex;
   align-items: center;
@@ -51,16 +52,21 @@ html {
 
 .nav__list {
   display: flex;
-  color: #fff;
   font-weight: thin;
   font-size: 22px;
   list-style-type: none;
   font-family: "Roboto";
   letter-spacing: 2px;
-  font-weight: 100;
+  font-weight: 200;
 }
 
-.nav__item:hover {
+.nav__link {
+  display: flex;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav__link:hover {
   cursor: pointer;
   color: var(--font-gold)
 }
@@ -73,7 +79,9 @@ html {
 .nav__item:not(:last-child) {
   margin-right: 55px;
 }
+/* #endregion */
 
+/* #region welcome section */
 .welcome {
   width: 100%;
   background-color: var(--bg-dark);
@@ -206,6 +214,9 @@ html {
   stroke: #9D8665;
 }
 
+/* #endregion */
+
+/* #region visiting section */
 .visiting {
   padding: 75px 0;
 }
@@ -226,6 +237,7 @@ html {
   height: 3px;
   width: 100%;
   margin-bottom: 75px;
+  border: none;
 }
 
 .virtual-tour__cards {
@@ -236,7 +248,6 @@ html {
 }
 
 .virtual-tour__card {
-  border: 2px solid red;
   width: 424px;
 }
 
@@ -250,13 +261,13 @@ html {
   margin: 0 0 10px;
 }
 
-
 .virtual-tour__card .virtual-tour__card-line {
  height: 2px;
  width: 70%;
  background-color: var(--dark-red); 
  margin: 0 0 10px;
  transition: width 0.5s ease;
+ border: none;
 }
 
 .virtual-tour__card:hover .virtual-tour__card-line {
@@ -286,4 +297,77 @@ html {
   text-decoration: none;
   color: #000;
 }
+
+/* #endregion */
+
+/* #region explore */
+
+.explore {
+  background-color: var(--bg-dark);
+  padding: 75px 0; 
+}
+
+.explore__wrapper {
+  display: flex;
+  gap: 60px;
+
+}
+
+.explore__title {
+  color: #FFF;
+  font-family: "Forum";
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.explore__line {
+  width: 100%;
+  height: 3px;
+  border: none;
+  background-color: var(--dark-red);
+  margin-bottom: 75px;
+}
+
+.explore__text {
+  color: #FFF;
+  font-family: "Roboto";
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 38.5px;
+}
+
+.explore__text--special {
+  color: #CAAA7D;
+}
+
+.explore__text:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.explore__image {
+  position: relative;
+}
+
+.explore__image-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.explore__image-slider path {
+  transition: fill 0.3s ease;
+}
+
+.explore__image-slider:hover path {
+  fill: var(--font-gold);
+}
+
+/* #endregion */
 
